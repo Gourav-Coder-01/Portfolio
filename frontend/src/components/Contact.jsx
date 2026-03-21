@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,7 +15,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch('http://localhost:5000/contact', {   // your backend endpoint
+      const res = await fetch(`${process.env.BACKEND_URL}/contact`, {   // your backend endpoint
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
