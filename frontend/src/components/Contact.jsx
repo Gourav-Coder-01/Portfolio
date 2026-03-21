@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch(`${process.env.BACKEND_URL}/contact`, {   // your backend endpoint
+      const res = await fetch(`${process.env.VITE_API_URL}/contact`, {   // your backend endpoint
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
