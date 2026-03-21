@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.text-stroke {
+  -webkit-text-stroke: 1px yellow;  /* border thickness + color */
+  color: transparent;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /*prevents scrollbars */
+  overflow-y: auto;  /*prevents scrollbars */
+  cursor: none;
+}
+
+
+.trail-ball {
+  position: fixed; /* instead of absolute */
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  animation: fadeOut 1s forwards;
+  z-index: 9999;
+}
+
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
