@@ -11,6 +11,12 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
+
+//get
+app.get('/',(req,res)=>{
+  res.send("api working")
+})
+
 // Contact route
 app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
