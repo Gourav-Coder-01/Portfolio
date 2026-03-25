@@ -28,18 +28,6 @@ const Portfolio = () => {
         <a 
           target="_blank" 
           rel="noopener noreferrer" 
-          href="https://ecommerceshopsy.netlify.app/"
-        >
-          <img 
-            src={shopsy} 
-            alt="Shopsy Project" 
-            className="w-full rounded hover:scale-105 duration-200 hover:shadow-[0_0_10px_10px_white]" 
-          />
-        </a>
-
-        <a 
-          target="_blank" 
-          rel="noopener noreferrer" 
           href="https://clone-gourav.netlify.app/"
         >
           <img 
