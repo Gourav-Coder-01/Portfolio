@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo2.png'
 import { FaGithub } from 'react-icons/fa'
-import resume from '../assets/frontend-resume.pdf'
+import resume from '../assets/Gourav-resume.pdf'
 
 const Hero = () => {
   return (
